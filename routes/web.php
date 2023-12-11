@@ -54,3 +54,10 @@ Route::group(['middleware' => 'auth'], function () {
     // Route::get('products/create', ProductForm::class)->name('products.create');
     // Route::get('products/{product}', ProductForm::class)->name('products.edit');
 });
+
+
+Route::get('/counter', function () {
+    return view('counter', [
+        // 'users' => User::all(),
+    ]);
+})->name('counter');
